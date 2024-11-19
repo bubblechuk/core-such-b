@@ -1,6 +1,6 @@
 @font-face {
   font-family:"Motiva Sans";
-  src: url("./MotivaSans-Regular_woff.woff") format("woff");
+  src: url("./fonts/MotivaSans-Regular_woff.woff") format("woff");
 }
 html, body {
   touch-action: pan-y;
@@ -15,7 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
  
   
-  background-color: gray;
+  background-color: #0f1317;
 }
 
 code {
