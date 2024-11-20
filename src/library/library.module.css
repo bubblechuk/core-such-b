@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title {
+    margin: 0;
+    padding-left: 25px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+.content {
+    width: 1366px;
+    height: fit-content;
+    justify-content: center;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.game {
+    height: 210px;
+    width: 140px;
+    background-color: #1f2833;
+    transition: 0.5s;
+}
+.game:hover {
+    filter: sepia(100%);
+}
+@media (max-width: 750px) {
+    .container, .library, .content, .title {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+    .content {
+        padding: 0;
+        padding-bottom: 25px;
+    }
+}

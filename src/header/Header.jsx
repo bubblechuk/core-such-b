@@ -17,11 +17,11 @@ export const Header = () => {
         { label: "Магазин", path: "/" },
         { label: "Библиотека", path: "/library" },
         { label: "Корзина", path: "/cart" },
-        { label: account.length==0?"Войти":account[0].login + ' | Выйти', path: "/login" }
+        { label: account.length==0?"Войти":'Выйти', path: "/login" }
     ];
 
     const handleButtonClick = (index, button) => {
-        if (button.label !== "Войти") dispatch(logout())
+        if (button.label !== "Войти") dispatch(logout());
         setActiveButton(index);
     };
 
@@ -32,7 +32,7 @@ export const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <div className={styles.logo}>Vagames</div>
+                <Link to="/"><div className={styles.logo}>Vagames</div></Link>
                 <div className={styles.buttons}>
                     {buttons.map((button, index) => {
                         
@@ -52,7 +52,7 @@ export const Header = () => {
                 </div>
                 <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : styles.menuClose}`}>
                     {buttons.map((button, index) => (
-                        <Link to={button.path} key={index}>
+                        <Link to={button.path} key={index} onClick={toggleMenu}>
                             <div className={`${styles.mbutton} ${menuOpen ? true : styles.close}`}>
                                 {button.label}
                             </div>

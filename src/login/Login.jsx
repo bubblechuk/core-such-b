@@ -22,14 +22,14 @@ const LogPage = () => {
                 {...register("login", { required: "Введите логин" })}
                 placeholder="Логин"
             />
-            {errors.username && <p>{errors.username.message}</p>}
+            {errors.username && <p className={styles.p}>{errors.username.message}</p>}
 
             <input
                 type="password"
                 {...register("password", { required: "Введите пароль" })}
                 placeholder="Пароль"
             />
-            {errors.password && <p>{errors.password.message}</p>}
+            {errors.password && <p className={styles.p}>{errors.password.message}</p>}
             <span>
             <input type="checkbox" {...register("rememberMe")} />
             <label className={styles.label} >Запомнить меня</label>
@@ -56,7 +56,7 @@ const RegPage = () => {
                 {...register("login", { required: "Введите логин" })}
                 placeholder="Ваш логин"
             />
-            {errors.login && <p>{errors.login.message}</p>}
+            {errors.login && <p className={styles.p}>{errors.login.message}</p>}
 
             <input 
                 {...register("phone", { required: "Введите номер телефона",
@@ -67,7 +67,7 @@ const RegPage = () => {
                  })}
                 placeholder="Ваш номер телефона"
             />
-            {errors.phone && <p>{errors.phone.message}</p>}
+            {errors.phone && <p className={styles.p}>{errors.phone.message}</p>}
 
             <input 
                 type="email"
@@ -80,7 +80,7 @@ const RegPage = () => {
                 })}
                 placeholder="Ваш e-mail"
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <p className={styles.p}>{errors.email.message}</p>}
 
             <input 
                 type="password" 
@@ -90,7 +90,7 @@ const RegPage = () => {
                 })}
                 placeholder="Ваш пароль"
             />
-            {errors.password && <p>{errors.password.message}</p>}
+            {errors.password && <p className={styles.p}>{errors.password.message}</p>}
 
             <input 
                 type="password" 
@@ -100,14 +100,14 @@ const RegPage = () => {
                 })}
                 placeholder="Подвердите ваш пароль"
             />
-            {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
+            {errors.confirmPassword && <p className={styles.p}>{errors.confirmPassword.message}</p>}
 
             <span><input 
                 type="checkbox" 
                 {...register("terms", { required: "Вы должны принять условия соглашения" })}
             />
             <label className={styles.label}>Я принимаю условия соглашения</label></span>
-            {errors.terms && <p>{errors.terms.message}</p>}
+            {errors.terms && <p className={styles.p}>{errors.terms.message}</p>}
 
             <button className={styles.button} type="submit">Зарегистрироваться</button>
         </form>
