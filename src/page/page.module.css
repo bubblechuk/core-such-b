@@ -1,0 +1,224 @@
+.container {
+    width: 100%;
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+}
+.page {
+    width: 940px;
+    min-height: 100vh;
+}
+.main {
+    width: 940px;
+    height: 444px;
+    background-color: #171d25;
+    display: flex;
+}
+.images {
+    width: 616px;
+    height: 444px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc {
+    width: 324px;
+    height: 444px;
+}
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    margin-bottom: 7px;
+}
+.sdesc {
+        max-height: 111px;
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 18px;
+        padding-right: 16px;
+        text-align: left;
+        color: white;
+}
+.info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+    gap: 7px;
+}
+.def {
+    width: 324px;
+    display: flex;
+}
+.var, .value {
+    text-align: left;
+    font-size: 13px;
+    color: white;
+}
+.var {
+    width: 104px;
+}
+.value {
+    width: 122px;
+}
+.mimage {
+    width: 600px;
+    height: 337px;
+    background-color: black;
+}
+.miniatures {
+    width: 600px;
+    height: 107px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.mini {
+    height: 65px;
+    width: 115px;
+    background-color: #10141a;
+}
+.title {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.secondary {
+    margin-top: 25px;
+
+}
+.buy {
+    padding: 20px;
+    width: 576px;
+    height: 60px;
+    background-color: #171d25;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+.bbutton {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    display: flex;
+  gap: 10px;
+  padding: 5px;
+  background: black;
+  border-radius: 2px;
+
+}
+.price, .cbutton {
+    color: white;
+    font-weight: bold;
+}
+.gtitle {
+    font-size: 24px;
+}
+.cbutton {
+    border:none;
+    color: white;
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient( to right, #8ed629 5%, #6aa621 95%);
+}
+.cbutton:hover {
+    background: linear-gradient( to left, #8ed629 5%, #6aa621 95%);
+}
+.bdesc {
+    width: 616px;
+}
+.btitle{
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+.bbdesc {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+.recommend {
+    width: 316px;
+    min-height: 155px;
+    background-color: #171d25;
+    padding-bottom: 25px;
+}
+.secondary {
+    display: flex;
+    justify-content: space-between;
+}
+.recitem {
+    width: 277px;
+    height: 170px;
+    background-color: #10141a;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.rtitle {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+.rimage {
+    width: 277px;
+    height: 130px;
+    background-color: black;
+}
+.rprice {
+    width: 257px;
+    height:40px;
+    padding-right: 20px;
+    color: white;
+    text-align: right;
+    line-height: 30px;
+    font-weight: bold;
+}
+@media (max-width: 940px) {
+    .main {
+        flex-direction: column-reverse;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+    }
+    .title {
+        width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background-color: #171d25;
+    }
+    .images {
+        display: none;
+    }
+    .page {
+        width: 100%;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .bdesc {
+        padding: 10px;
+  width: calc(100% - 20px);
+    }
+    .secondary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recommend, .buy {
+        width: 100%;
+    }
+    .bbutton {
+        right: 50px;
+    }
+}

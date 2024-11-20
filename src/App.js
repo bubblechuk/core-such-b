@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Authorization } from './login/Login';
 import { Cart } from './cart/Cart';
 import { Library } from './library/Library';
+import { Page } from './page/Page';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Shop/>}/>
+        <Route path="/" element={<Page/>}/>
         <Route path="/login" element={<Authorization/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/library" element={<Library/>}/>
