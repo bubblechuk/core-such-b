@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './header.module.css';
+import logo from './logo.jpg'
 import Hamburger from './header_menu_hamburger.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { logout } from '../redux/slices';
@@ -10,9 +11,7 @@ export const Header = () => {
     const [activeButton, setActiveButton] = useState(0);
     const [menuOpen, setMenuOpen] = useState(false);
     const accounts = useSelector(state=>state.login.accounts);
-    console.log(accounts)
     const account = accounts.filter(elem => elem.isAuthenticated === true)
-    console.log(account)
     const buttons = [
         { label: "Магазин", path: "/" },
         { label: "Библиотека", path: "/library" },
@@ -21,7 +20,7 @@ export const Header = () => {
     ];
 
     const handleButtonClick = (index, button) => {
-        if (button.label !== "Войти") dispatch(logout());
+        if (button.label === "Выйти") dispatch(logout());
         setActiveButton(index);
     };
 
@@ -32,7 +31,7 @@ export const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <Link to="/"><div className={styles.logo}>Vagames</div></Link>
+                <Link to="/"><div className={styles.logo}><img className={styles.logoimage} src={logo}/>Vagames</div></Link>
                 <div className={styles.buttons}>
                     {buttons.map((button, index) => {
                         

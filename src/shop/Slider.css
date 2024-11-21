@@ -1,0 +1,15 @@
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+    color: white !important;
+}
+.slick-prev, .slick-next {
+    display: none !important;
+}
+.slick-initialized {
+    margin-bottom: 50px;
+}
+@media (max-width: 940px) {
+    .slick-initialized {
+        display: none;
+    }
+}

@@ -1,9 +1,98 @@
-import styles from "./shop.module.css"
-import { Link } from "react-router-dom"
+import React, { useState } from "react";
+import styles from "./shop.module.css";
+import { MySlider } from "./Slider";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+import { Autocomplete } from "./Autocomplete";
 export const Shop = () => {
-    return (
-        <div className={styles.shop}>
-            g
+  const games = useSelector(state => state.login.games)
+  const navigate = useNavigate();
+
+  const [selectedGenre, setSelectedGenre] = useState("");
+
+  const filteredGames =
+    selectedGenre === ""
+      ? games
+      : games.filter((game) => game.genre === selectedGenre);
+
+  return (
+    <div className={styles.container}>
+      <img
+        className={styles.mimage}
+        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/frontpage/b4153e980fc516c6312b75c4/page_bg_ukrainian.jpg"
+        alt="Shop Background"
+      />
+      <Autocomplete/>
+      <div className={styles.shop}>
+        <div className={styles.main}>
+            <p className={styles.mainrec}>Рекомендуемое</p>
+          <MySlider />
+          <hr className={styles.hr} />
+          <p className={styles.mainrec} style={{marginTop: "25px"}}>Новинки</p>
+          <div className={styles.itemRec}>
+            <div className={styles.bigGames}>
+            <div className={styles.bigGame}>
+              <img className={styles.bigimg}/>
+              ⠀Game <br/>
+              ⠀100 BYN
+              
+              </div>
+              <div className={styles.bigGame}>
+              <img className={styles.bigimg}/>
+              ⠀Game <br/>
+              ⠀100 BYN
+              
+              </div>
+            </div>
+            <div className={styles.smallGames}>
+              <div className={styles.smallGame}>
+                <img className={styles.smallimg}/>
+              100 BYN⠀
+              </div>
+              <div className={styles.smallGame}>
+                <img className={styles.smallimg}/>
+              100 BYN⠀
+              </div>
+            </div>
+          </div>
+          <p className={styles.mainrec} >Категории</p>
         </div>
-    )
-}
+        
+        <div className={styles.gcontainer}>
+          <div className={styles.genres}>
+            {["Шутеры", "РПГ", "Инди-игры", "Головоломки", "Гонки"].map(
+              (genre) => (
+                <div
+                  key={genre}
+                  className={`${styles.genre} ${
+                    selectedGenre === genre ? styles.activeGenre : ""
+                  }`}
+                  onClick={() => setSelectedGenre(genre)}
+                >
+                  {genre}
+                </div>
+              )
+            )}
+          </div>
+        </div>
+
+        <div className={styles.genregames}>
+          {filteredGames.length > 0 ? (
+            filteredGames.map((game) => (
+              <div key={game.title} className={styles.game }  onClick={()=>{navigate(`/page?game=${game.title}`)}}>
+                <img
+                  className={styles.genreimg}
+                  src={game.img}
+                 
+                />
+                <div className={styles.price} >{`${game.price} BYN`}</div>
+              </div>
+            ))
+          ) : (
+            <div className={styles.noGames}>Нет игр в выбранном жанре!</div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};

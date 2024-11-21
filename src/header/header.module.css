@@ -12,6 +12,9 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .container {
     display: flex;
@@ -66,6 +69,9 @@
 }
 .close {
     display: none;
+}
+.logoimage {
+    width: 50px;
 }
 @media (max-width: 750px) {
     .header {

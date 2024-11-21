@@ -121,8 +121,11 @@
     display: flex;
     justify-content: space-between;
 }
+.empty {
+    width: 615px;
+}
 @media (max-width: 750px) {
-    .container, .cart, .title, .window, .goods, .good, .check, .checkout {
+    .container, .cart, .title, .window, .goods, .good, .check, .checkout, .empty {
         width: 100%;
     }
     .container {

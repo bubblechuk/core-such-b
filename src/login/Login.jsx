@@ -11,7 +11,7 @@ const LogPage = () => {
     const onSubmit = (data) => {
         const { username, password } = data;
         dispatch(login({ username, password }))
-        navigate("/Магазин");
+        navigate("/");
 
         reset();
     };

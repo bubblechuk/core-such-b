@@ -1,0 +1,23 @@
+[
+        {
+            "images": {
+                "smallimg": "src",
+                "bigimg": "src",
+                "genreimg": "src",
+                "libimg": "src",
+                "media": ["src", "src", "src", "src", "src"]
+            },
+            "title": "gamename",
+            "desc": "desc_small",
+            "bigdesc": "big description",
+            "price": "100",
+            "genre": "Шутеры",
+            "info": {
+                "date": "10/24/20",
+                "rating": "77",
+                "developer": "dev",
+                "publisher": "publisher"
+            }
+        }
+
+]
