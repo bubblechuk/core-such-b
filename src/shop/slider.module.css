@@ -1,18 +1,18 @@
 .itemImage {
     width: 940px;
     height: 353px;
-    background-color: #1f2833;
+    background-color: #161c24;
     display: flex;
 }
 .image {
     width: 616px;
     height: 353px;
-    background-color: #1f2833;
+    background-color: #161c24;
 }
 .desc {
     width: 314px;
     height: 343px;
-    background-color: #1a9fff;
+    background-color: #161c24;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -27,7 +27,7 @@
 .previmg {
     width: 145px;
     height: 60px;
-    background-color: #1f2833;
+    background-color: #161c24;
 }
 .title {
     font-size: 26px;
@@ -40,6 +40,9 @@
     text-align: left;
     color: white;
     font-weight: bold;
+}
+.item {
+    cursor: pointer;
 }
 @media (max-width: 940px) {
     .itemImage {

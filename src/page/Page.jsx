@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styles from './page.module.css';
 import { useLocation } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, delFromCart } from '../redux/slices'; // Импорт действия для удаления
-
+import { addToCart, delFromCart } from '../redux/slices'; 
+import { useNavigate } from 'react-router';
 export const Page = () => {
     const location = useLocation();
     const dispatch = useDispatch();
@@ -11,19 +11,21 @@ export const Page = () => {
     const list = useSelector(state => state.login.games);
     const accounts = useSelector(state => state.login.accounts);
     const account = accounts.find((acc) => acc.isAuthenticated);
-    const cart = account?.cart || []; // Если аккаунт не найден, корзина будет пустым массивом
-    const library = account?.library || []; // Если аккаунт не найден, библиотека будет пустым массивом
+    const games = useSelector(state => state.login.games);
+    const cart = account?.cart || []; 
+    const library = account?.library || [];
     const game = list.filter(elem => elem.title === searchParams.get('game'))[0];
+    const recommended = games.filter(elem => elem.genre === game.genre && elem.title !== game.title);
     const [mainImage, setMainImage] = useState(game.images.media[0]);
-
-    const isInCart = cart.some(item => item.id === game.id); // Проверка на нахождение в корзине
-    const isInLibrary = library.some(item => item.id === game.id); // Проверка на нахождение в библиотеке
+    const navigate = useNavigate();
+    const isInCart = cart.some(item => item.title === game.title); 
+    const isInLibrary = library.some(item => item.title === game.title); 
 
     const handleCartClick = () => {
         if (isInCart) {
-            dispatch(delFromCart(game.title)); // Удаляем товар из корзины
+            dispatch(delFromCart(game.title));
         } else {
-            dispatch(addToCart(game)); // Добавляем товар в корзину
+            dispatch(addToCart(game)); 
         }
     };
 
@@ -71,9 +73,9 @@ export const Page = () => {
                                 <div className={styles.value}>{game.info.publisher}</div>
                             </div>
                         </div>
-                        <div>
+                        {isInLibrary?<div>
                             <button className={styles.pbutton}>Играть!</button>
-                        </div>
+                        </div>:false}
                     </div>
                 </div>
                 <div className={styles.secondary}>
@@ -85,7 +87,7 @@ export const Page = () => {
                                 <button
                                     onClick={handleCartClick}
                                     className={isInLibrary?styles.lbutton:styles.cbutton}
-                                    disabled={isInLibrary} // Блокировка кнопки, если игра в библиотеке
+                                    disabled={isInLibrary} 
                                 >
                                     {isInLibrary
                                         ? "В библиотеке"
@@ -123,10 +125,14 @@ export const Page = () => {
                         <div className={styles.recommend}>
                             <p className={styles.rtitle}>Также вас заинтересует</p>
                             <div className={styles.items}>
-                                <div className={styles.recitem}>
-                                    <img className={styles.rimage} alt="Recommendation" />
-                                    <div className={styles.rprice}>100 BYN</div>
+                                {recommended.map((elem => {
+                                    return (
+                                        <div className={styles.recitem} onClick={() => {navigate(`/page?game=${elem.title}`)}}>
+                                    <img className={styles.rimage} alt="Recommendation" src={elem.images.smallimg} />
+                                    <div className={styles.rprice}>{elem.price} BYN</div>
                                 </div>
+                                    )
+                                }))}
                             </div>
                         </div>
                     </div>

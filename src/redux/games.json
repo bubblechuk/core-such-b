@@ -2,7 +2,6 @@
     {
         "images": {
             "smallimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/header.jpg",
-            "bigimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000032.1920x1080.jpg", 
             "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/library_600x900.jpg?t=1729702412",
             "media": [
                 "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000027.600x338.jpg?t=1729702412",
@@ -130,15 +129,15 @@
     },
     {
         "images": {
-            "smallimg": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/header.jpg?t=1732208105",
+            "smallimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/header.jpg?t=1720810823",
 
-            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/22330/library_600x900.jpg?t=1729702412",
+            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/library_600x900.jpg?t=1729702412",
             "media": [
-                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009039.600x338.jpg?t=1732208105",
-                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009041.600x338.jpg?t=1732208105",
-                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009043.600x338.jpg?t=1732208105",
-                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009048.600x338.jpg?t=1732208105",
-                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009067.600x338.jpg?t=1732208105"
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/ss_9c73ac83c8acfb69db6166f239fdba2ffa099b32.600x338.jpg?t=1720810823",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/ss_6a7964a4dede8ad7d8b4e413e8b291defbbaa55b.600x338.jpg?t=1720810823",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/ss_583fdbf6aa66a179d60a2261bab7b10c102e36e8.600x338.jpg?t=1720810823",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/ss_05033717114ac8a697fbf45c149d26bb1cfc6893.600x338.jpg?t=1720810823",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/210970/ss_86c4e2f0fd7cc62d3bfbc4a6cd8f7423650610bb.600x338.jpg?t=1720810823"
             ]
         },
         "title": "The Witness",

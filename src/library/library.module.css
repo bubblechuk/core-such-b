@@ -24,7 +24,7 @@
 .game {
     height: 210px;
     width: 140px;
-    background-color: #1f2833;
+    background-color: #161c24;
     transition: 0.5s;
 }
 .game:hover {

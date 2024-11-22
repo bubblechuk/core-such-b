@@ -21,6 +21,7 @@ export const Shop = () => {
         className={styles.mimage}
         src="https://web.archive.org/web/20230623195818im_/https://cdn.akamai.steamstatic.com/steam/clusters/frontpage/45ae6347736f32d88e2394aa/page_bg_english.jpg?t=1687371561"
         alt="Shop Background"
+        onClick={() => {navigate(`/page?game=${games[1].title}`)}}
       />
       <Autocomplete/>
       <div className={styles.shop}>
@@ -32,26 +33,15 @@ export const Shop = () => {
           <div className={styles.itemRec}>
             <div className={styles.bigGames}>
             <div className={styles.bigGame}>
-              <img className={styles.bigimg}/>
-              ⠀Game <br/>
-              ⠀100 BYN
+              <img className={styles.bigimg} alt="small_image" src={games[2].images.libimg} onClick={() => {navigate(`/page?game=${games[2].title}`)}}/>
+            
               
               </div>
               <div className={styles.bigGame}>
-              <img className={styles.bigimg}/>
-              ⠀Game <br/>
-              ⠀100 BYN
-              
+              <img className={styles.bigimg} alt="small_image" src={games[3].images.libimg} onClick={() => {navigate(`/page?game=${games[3].title}`)}}/>
               </div>
-            </div>
-            <div className={styles.smallGames}>
-              <div className={styles.smallGame}>
-                <img className={styles.smallimg}/>
-              100 BYN⠀
-              </div>
-              <div className={styles.smallGame}>
-                <img className={styles.smallimg}/>
-              100 BYN⠀
+              <div className={styles.bigGame}>
+              <img className={styles.bigimg} alt="small_image" src={games[1].images.libimg} onClick={() => {navigate(`/page?game=${games[1].title}`)}}/>
               </div>
             </div>
           </div>
@@ -83,7 +73,7 @@ export const Shop = () => {
                 <img
                   className={styles.genreimg}
                   src={game.images.smallimg}
-                 
+                  alt="small_image"
                 />
                 <div className={styles.price} >{`${game.price} BYN`}</div>
               </div>

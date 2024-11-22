@@ -5,6 +5,8 @@
 html, body {
   touch-action: pan-y;
   overflow-x: hidden;
+  background-image: url("https://store.cloudflare.steamstatic.com/public/images/v6/colored_body_top.png");
+  background-size: cover;
 }
 body {
   margin: 0;

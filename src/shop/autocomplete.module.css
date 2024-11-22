@@ -9,7 +9,7 @@
     font-size: 24px;
     padding: 0 10px;
     color: white;
-    background-color: #1f2833;
+    background-color: #161c24;
     border: none;
     border-radius: 2px;
   }
@@ -39,7 +39,7 @@
   }
   
   .suggestion:hover {
-    background-color: #1f2833;
+    background-color: #161c24;
   }
   @media (max-width: 940px) {
     .suggestions, .input {

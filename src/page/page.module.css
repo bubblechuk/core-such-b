@@ -217,6 +217,9 @@
 .pbutton:hover {
     background: linear-gradient( to left, #8ed629 5%, #6aa621 95%);
 }
+.recitem {
+    cursor: pointer;
+}
 @media (max-width: 940px) {
     .main {
         flex-direction: column-reverse;
