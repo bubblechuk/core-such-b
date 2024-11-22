@@ -1,23 +1,174 @@
 [
-        {
-            "images": {
-                "smallimg": "src",
-                "bigimg": "src",
-                "genreimg": "src",
-                "libimg": "src",
-                "media": ["src", "src", "src", "src", "src"]
+    {
+        "images": {
+            "smallimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/header.jpg",
+            "bigimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000032.1920x1080.jpg", 
+            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/library_600x900.jpg?t=1729702412",
+            "media": [
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000027.600x338.jpg?t=1729702412",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000028.600x338.jpg?t=1729702412",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000029.600x338.jpg?t=1729702412",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000030.600x338.jpg?t=1729702412",
+                "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/240/0000000031.600x338.jpg?t=1729702412"
+            ]
+        },
+        "title": "Counter-Strike: Source",
+        "desc": "Counter-Strike: Source сочетает в себе отмеченный наградами командный экшен Counter-Strike с передовой технологией Source™.",
+        "bigdesc": "НОВАЯ ВЕРСИЯ СЕТЕВОГО ШУТЕРА НОМЕР ОДИН В МИРЕ\nИгра Counter-Strike: Source сочетает в себе триумфальную командную слаженность Counter-Strike с передовой технологией Source™. Обладающий соответствующей последним достижениям технической мысли графикой, полностью обновленным звуком и реальной физикой, Counter-Strike: Source просто должен занять почетное место в коллекции каждого поклонника жанра экшен.",
+        "price": "18",
+        "genre": "Шутеры",
+        "info": {
+            "date": "01/10/2004",
+            "rating": "88",
+            "developer": "Valve",
+            "publisher": "Valve"
+        },
+        "req": {
+            "min": {
+                "os": "Windows XP",
+                "cpu": "Любой процессор 1.7 ГГц",
+                "ram": "512 МБ",
+                "gpu":"Любая с поддержкой DirectX 8.1",
+                "space": "4 ГБ"
             },
-            "title": "gamename",
-            "desc": "desc_small",
-            "bigdesc": "big description",
-            "price": "100",
-            "genre": "Шутеры",
-            "info": {
-                "date": "10/24/20",
-                "rating": "77",
-                "developer": "dev",
-                "publisher": "publisher"
+            "rec": {
+                "os": "Windows 10/11",
+                "cpu": "Pentium 4 3 ГГц",
+                "ram": "1 ГБ",
+                "gpu":"Любая с поддержкой DirectX 9",
+                "space": "10 ГБ"
             }
-        }
+        },
+        "key": "ABCD-EFGH-IJKL-MNOP"
 
+    },
+    {
+        "images": {
+            "smallimg": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/header_alt_assets_0_russian.jpg?t=1732204619",
+
+            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1942280/library_600x900.jpg?t=1729702412",
+            "media": [
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/ss_79be0eea0299da76bc50cef160fb669509f74e0b.600x338.jpg?t=1732204619",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/ss_496fe994035e600eed101dea3e1c0482b4dac8e6.600x338.jpg?t=1732204619",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/ss_6d2f09b839af705c732d4eaf8080a24b9939aca9.600x338.jpg?t=1732204619",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/ss_ddc4374c23a6776fb566d8c0af126d8166ce78bb.600x338.jpg?t=1732204619",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/ss_9d7d1532397e65d39a3b63e3b25bd3adf7a81b37.600x338.jpg?t=1732204619"
+            ]
+        },
+        "title": "Brotato",
+        "desc": "Brotato — аренный шутер с элементами «рогалика», в котором вы играете за вооруженную картофелину, дающую отпор ордам пришельцев. Берите до 6 видов оружия, выбирайте черты и предметы, придумывайте тактику и выживайте до прибытия подмоги. ",
+        "bigdesc": "Космический корабль с планеты Картошка потерпел крушение в мире пришельцев. Выжил только Картофан Brotato — умелый боец, одновременно использующий до 6 единиц оружия. Крахмальный воин должен выжить во враждебном мире и продержаться до прилета товарищей.",
+        "price": "9.85",
+        "genre": "Инди-игры",
+        "info": {
+            "date": "23/06/2023",
+            "rating": "79",
+            "developer": "Blobfish",
+            "publisher": "Blobfish"
+        },
+        "req": {
+            "min": {
+                "os": "Windows 7",
+                "cpu": "Любой процессор 2 ГГц",
+                "ram": "2 ГБ",
+                "gpu":"128 МБ Любая с поддержкой OpenGL 3",
+                "space": "200 МБ"
+            },
+            "rec": {
+                "os": "Windows 10/11",
+                "cpu": "Сore 2 Duo 2.6 ГГц",
+                "ram": "4 ГБ",
+                "gpu":"256 МБ Любая с поддержкой OpenGL 4",
+                "space": "200 МБ"
+            }
+        },
+        "key": "1234-5678-90AB-CDEF"
+
+    },
+    {
+        "images": {
+            "smallimg": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/header.jpg?t=1732208105",
+
+            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/22330/library_600x900.jpg?t=1729702412",
+            "media": [
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009039.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009041.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009043.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009048.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009067.600x338.jpg?t=1732208105"
+            ]
+        },
+        "title": "The Elder Scrolls IV: Oblivion® GOTY",
+        "desc": "The Elder Scrolls IV: Oblivion® Game of the Year Edition является одной из лучших RPG в истории. Шагните в самый яркий и проработанный игровой мир. Вы можете пойти только по основной сюжетной линии или погрузиться в этот мир с головой и найти для себя множество...",
+        "bigdesc": "The Elder Scrolls IV: Oblivion® Game of the Year Edition является одной из лучших RPG в истории. Шагните в самый яркий и проработанный игровой мир. Вы можете пойти только по основной сюжетной линии или погрузиться в этот мир с головой и найти для себя множество интересных и разнообразных заданий.Также Game of the Year Edition включает дополнения Knights of the Nine и Shivering Isles, которые добавят множество незабываемых заданий в огромный мир Oblivion. Поиграв в это, вы поймете, почему критики считают Oblivion лучшей игрой 2006 года.",
+        "price": "30",
+        "genre": "РПГ",
+        "info": {
+            "date": "11/09/2007",
+            "rating": "94",
+            "developer": "Bethesda Studios",
+            "publisher": "Bethesda Softworks"
+        },
+        "req": {
+            "min": {
+                "os": "Windows 2000",
+                "cpu": "Pentium 4 2 ГГц",
+                "ram": "512 МБ",
+                "gpu":"Любая с поддержкой DirectX 8.1",
+                "space": "4.6ГБ"
+            },
+            "rec": {
+                "os": "Windows XP",
+                "cpu": "Сore 2 Duo 2.2 ГГц",
+                "ram": "1 ГБ",
+                "gpu":"Любая с поддержкой DirectX 9",
+                "space": "4.6 ГБ"
+            }
+        },
+        "key": "XYZ1-2345-6789-WXYZ"
+
+    },
+    {
+        "images": {
+            "smallimg": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/header.jpg?t=1732208105",
+
+            "libimg": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/22330/library_600x900.jpg?t=1729702412",
+            "media": [
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009039.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009041.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009043.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009048.600x338.jpg?t=1732208105",
+                "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22330/0000009067.600x338.jpg?t=1732208105"
+            ]
+        },
+        "title": "The Witness",
+        "desc": "Вы просыпаетесь в одиночестве на острове, полном сложных и удивительных загадок. ",
+        "bigdesc": "Вы просыпаетесь в одиночестве на острове, полном сложных и удивительных загадок. Вы забыли, кто вы и как попали на остров, поэтому остается только одно: изучить местность — вдруг здесь есть что-нибудь, что поможет вам вернуть память и отыскать дорогу домой. The Witness — игра для одного пользователя, разнообразный открытый мир с более чем пятью сотнями загадок. Игра исходит из того, что с ней взаимодействует умный человек, время которого ценно. Ни одна загадка не служит просто для усложнения; каждая несет мысль. Вся игра насыщена смыслом. ",
+        "price": "38",
+        "genre": "Головоломки",
+        "info": {
+            "date": "26/01/2016",
+            "rating": "87",
+            "developer": "Thekla, Inc.",
+            "publisher": "Thekla, Inc."
+        },
+        "req": {
+            "min": {
+                "os": "Windows 7",
+                "cpu": "1.8 Ггц",
+                "ram": "4 ГБ",
+                "gpu":"Intel HD 4000 series",
+                "space": "5 ГБ"
+            },
+            "rec": {
+                "os": "Windows 7",
+                "cpu": "2.4Ггц",
+                "ram": "8 ГБ",
+                "gpu":"Geforce 780",
+                "space": "5 ГБ"
+            }
+        },
+        "key": "GAME-2024-ACTV-KEY1"
+
+    }
 ]

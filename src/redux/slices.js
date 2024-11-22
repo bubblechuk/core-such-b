@@ -7,10 +7,7 @@ const initialState = {
         email: "berezka@gmail.com",
         password: "123456",
         isAuthenticated: true,
-        library: [{
-            image: "src",
-            key: "ewewe"
-        }],
+        library: [],
         cart: []
     }],
     games: json
@@ -73,7 +70,10 @@ const loginSlice = createSlice({
             const account = state.accounts.find((acc) => acc.isAuthenticated);
             if (account) { 
             if (account.cart.length != 0) {
-                account.library = [...account.library, account.cart];
+                account.cart.map((elem) => {
+                    account.library = [...account.library, elem];
+                })
+                
                 account.cart = [];
                 alert('Спасибо за покупку!');
             }

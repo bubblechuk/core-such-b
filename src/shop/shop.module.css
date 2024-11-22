@@ -72,7 +72,7 @@
 .game {
     width: 230px;
     height: 135px;
-    background-color: #1a9fff;
+    background-color: black;
 }
 .genregames {
     margin-top: 25px;
@@ -124,6 +124,12 @@
 }
 .genreimg {
     height: 100px;
+    width: 230px;
+    transition: 0.5s;
+}
+.genreimg:hover {
+    filter: grayscale(100%);
+    cursor: pointer;
 }
 .price {
     background-color: black;
@@ -175,6 +181,9 @@
     }
     .genregames {
         width: 100%;
+    }
+    .genreimg {
+        width: 200px;
     }
     .game {
         width: 200px;

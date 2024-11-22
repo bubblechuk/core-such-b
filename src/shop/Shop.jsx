@@ -19,7 +19,7 @@ export const Shop = () => {
     <div className={styles.container}>
       <img
         className={styles.mimage}
-        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/frontpage/b4153e980fc516c6312b75c4/page_bg_ukrainian.jpg"
+        src="https://web.archive.org/web/20230623195818im_/https://cdn.akamai.steamstatic.com/steam/clusters/frontpage/45ae6347736f32d88e2394aa/page_bg_english.jpg?t=1687371561"
         alt="Shop Background"
       />
       <Autocomplete/>
@@ -82,7 +82,7 @@ export const Shop = () => {
               <div key={game.title} className={styles.game }  onClick={()=>{navigate(`/page?game=${game.title}`)}}>
                 <img
                   className={styles.genreimg}
-                  src={game.img}
+                  src={game.images.smallimg}
                  
                 />
                 <div className={styles.price} >{`${game.price} BYN`}</div>
