@@ -10,9 +10,10 @@
 }
 .main {
     width: 940px;
-    height: 444px;
+    height: 424px;
     background-color: #171d25;
     display: flex;
+    padding: 10px 0;
 }
 .images {
     width: 616px;
@@ -216,6 +217,7 @@
 }
 .pbutton:hover {
     background: linear-gradient( to left, #8ed629 5%, #6aa621 95%);
+    cursor: pointer;
 }
 .recitem {
     cursor: pointer;

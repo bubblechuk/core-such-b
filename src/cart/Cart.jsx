@@ -38,7 +38,7 @@ export const Cart = () => {
 
 
             <div className={styles.buttons}>
-                <button className={styles.button}>Продолжить покупки</button>
+                <button className={styles.button} onClick={() => {navigate("/")}}>Продолжить покупки</button>
                 <button className={styles.button} onClick={() => {dispatch(wipeCart())}}>Удалить все</button>
             </div>
             </div>

@@ -20,7 +20,7 @@ export const MySlider = () => {
   return (
     <Slider {...settings}>
       {games.map((slide, i) => {
-        if (i>2) return <div></div>
+        if (i>2) return 
         console.log(i)
         return (
           <div className={styles.item} key={slide.id} onClick={() => {navigate(`/page?game=${slide.title}`)}}>

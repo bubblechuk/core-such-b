@@ -20,6 +20,8 @@ const loginSlice = createSlice({
             const newAccount = {
                 ...action.payload,
                 isAuthenticated: false,
+                library: [],
+                cart: []
             };
             state.accounts.push(newAccount);
         },
